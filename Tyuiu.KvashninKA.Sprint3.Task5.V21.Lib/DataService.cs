@@ -11,7 +11,7 @@ namespace Tyuiu.KvashninKA.Sprint3.Task5.V21.Lib
             {
                 for (int k = startValue2; k <= stopValue2; k++)
                 {
-                    sumSeries = sumSeries + (Math.Pow(x, 3) * Math.Cos(k));
+                    sumSeries = sumSeries + (Math.Pow(x, 3) * Math.Cos(k * Math.PI / 180));
                 }
             }
 
