@@ -6,8 +6,7 @@ namespace Tyuiu.KvashninKA.Sprint3.Task7.V16.Lib
         public double[] GetMassFunction(int startValue, int stopValue)
         {
             int len = (stopValue - startValue) + 1;
-            double[] valueArray;
-            valueArray = new double[len];
+            double[] valueArray = new double[len];
             double y;
             int count = 0;
 
@@ -19,7 +18,7 @@ namespace Tyuiu.KvashninKA.Sprint3.Task7.V16.Lib
                 }
                 else
                 {
-                    y = (Math.Sin(x) / (x + 1.2)) - (Math.Cos(x) * 4 * x) + 2;
+                    y = (Math.Sin(x) / (x + 1.2)) - (Math.Cos(x) * (4 * x)) + 2;
                 }
 
                 valueArray[count] = Math.Round(y, 2);
