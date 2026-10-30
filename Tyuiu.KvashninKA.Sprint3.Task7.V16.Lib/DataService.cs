@@ -19,11 +19,10 @@ namespace Tyuiu.KvashninKA.Sprint3.Task7.V16.Lib
                 else
                 {
                     double rad = x * (Math.PI / 180);
-                    y = (Math.Sin(x) / (x + 1.2)) - (Math.Cos(x) * 4 * x) + 2;
+                    y = (Math.Sin(rad) / (x + 1.2)) - (4 * x * Math.Cos(rad)) + 2;
                 }
 
-                double fx = (Math.Sin(x) / (x + 1.2)) - (4 * x * Math.Cos(x)) + 2;
-                valueArray[count] = Math.Round(fx, 2);
+                valueArray[count] = Math.Round(y, 2);
                 count++;
             }
 
