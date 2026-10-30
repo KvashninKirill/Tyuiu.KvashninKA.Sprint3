@@ -18,7 +18,7 @@ namespace Tyuiu.KvashninKA.Sprint3.Task7.V16.Lib
                 }
                 else
                 {
-                    y = (Math.Sin(x) / (x + 1.2)) - (Math.Cos(x) * (4 * x)) + 2;
+                    y = (Math.Sin(x) / (x + 1.2)) - Math.Cos(x * 4 * x) + 2;
                 }
 
                 valueArray[count] = Math.Round(y, 2);
